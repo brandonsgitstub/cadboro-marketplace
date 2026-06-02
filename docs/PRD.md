@@ -89,7 +89,8 @@ Install/usage flow for end users:
   `SKILL.md` frontmatter.
 - **R2.3** — `SKILL.md` frontmatter `description` MUST state *what it does* and
   *when to trigger it* (drives model invocation).
-- **R2.4** — Plugins are **MIT-licensed** (per each `plugin.json`).
+- **R2.4** — Plugins are **GPLv3-licensed** (per each `plugin.json`), matching
+  the repository `LICENSE`.
 - **R2.5** — Every plugin MUST pass `claude plugin validate .` before merge.
 - **R2.6** — Catalog and target statuses:
 
@@ -150,7 +151,7 @@ cadboro-marketplace/
    and `skills/<skill-name>/SKILL.md` (+ `references/` if any). `<skill-name>`
    must match the `name:` in the skill's `SKILL.md` frontmatter.
 2. **Add `plugin.json`** (name, description, version, author, homepage,
-   repository, MIT license).
+   repository, GPLv3 license).
 3. **Add a `marketplace.json` entry** in the `plugins` array (`source` = folder
    name, plus keywords + `category: product-management`).
 4. **Validate**: `claude plugin validate .`
@@ -177,12 +178,7 @@ cadboro-marketplace/
 
 - **Packaging** → one plugin per skill.
 - **Marketplace name** → `cadboro-labs`; `pluginRoot` → `./plugins`.
-- **Plugin license** → MIT (repo `LICENSE` remains GPLv3 for the marketplace
-  repo itself; confirm this split is intended).
+- **Plugin license** → GPLv3, matching the repository `LICENSE` (every
+  `plugin.json` declares `"license": "GPL-3.0-or-later"`).
 - **Source strategy** → vendor skills into plugin folders (curated install
   path), with the `github`-source approach documented as an alternative.
-
-## 11. Open Question
-
-- **Q1** — License split: plugins are MIT per `plugin.json`, but the repo
-  `LICENSE` is GPLv3. Confirm that's intentional, or align them.
