@@ -1,0 +1,11 @@
+{
+  "name": "user-story-generator",
+  "description": "Features → dev-ready user stories with acceptance criteria.",
+  "version": "1.0.0",
+  "author": { "name": "Brandon Gains", "url": "https://cadborolabs.com" },
+  "homepage": "https://cadborolabs.com",
+  "repository": "https://github.com/brandonsgitstub/user-story-skill",
+  "license": "GPL-3.0-or-later",
+  "keywords": ["product-management","user-stories","agile"],
+  "category": "product-management"
+}

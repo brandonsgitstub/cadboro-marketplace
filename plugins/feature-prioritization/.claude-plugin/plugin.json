@@ -1,0 +1,11 @@
+{
+  "name": "feature-prioritization",
+  "description": "Backlog → ranked RICE scorecard + brief.",
+  "version": "1.0.0",
+  "author": { "name": "Brandon Gains", "url": "https://cadborolabs.com" },
+  "homepage": "https://cadborolabs.com",
+  "repository": "https://github.com/brandonsgitstub/feature-prio-skill",
+  "license": "GPL-3.0-or-later",
+  "keywords": ["product-management","prioritization","rice"],
+  "category": "product-management"
+}
