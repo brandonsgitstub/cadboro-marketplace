@@ -1,0 +1,165 @@
+{
+  "name": "cadboro-labs",
+  "owner": {
+    "name": "Brandon Gains",
+    "url": "https://cadborolabs.com"
+  },
+  "metadata": {
+    "description": "The Cadboro Labs product-management skills toolkit for Claude Code.",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "product-roadmap",
+      "source": "./product-roadmap",
+      "description": "Backlog / prioritization → structured roadmap with sequencing rationale.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/product-roadmap-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "product-management",
+        "roadmap",
+        "planning"
+      ],
+      "category": "product-management"
+    },
+    {
+      "name": "prd-generator",
+      "source": "./prd-generator",
+      "description": "Rough ideas → engineering-ready PRDs.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/prd-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "product-management",
+        "prd",
+        "spec"
+      ],
+      "category": "product-management"
+    },
+    {
+      "name": "user-story-generator",
+      "source": "./user-story-generator",
+      "description": "Features → dev-ready user stories with acceptance criteria.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/user-story-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "product-management",
+        "user-stories",
+        "agile"
+      ],
+      "category": "product-management"
+    },
+    {
+      "name": "feature-prioritization",
+      "source": "./feature-prioritization",
+      "description": "Backlog → ranked RICE scorecard + brief.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/feature-prio-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "product-management",
+        "prioritization",
+        "rice"
+      ],
+      "category": "product-management"
+    },
+    {
+      "name": "jtbd-research",
+      "source": "./jtbd-research",
+      "description": "Jobs-to-be-Done interview guides + synthesis.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/jtbd-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "product-management",
+        "research",
+        "jtbd"
+      ],
+      "category": "research"
+    },
+    {
+      "name": "anti-ai-design",
+      "source": "./anti-ai-design",
+      "description": "Distinctive, non-generic frontend interfaces.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/anti-ai-design-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "design",
+        "frontend",
+        "ui"
+      ],
+      "category": "design"
+    },
+    {
+      "name": "saas-metrics",
+      "source": "./saas-metrics",
+      "description": "SaaS metrics → scenario-modeled financial analysis.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/saas-metrics-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "saas",
+        "metrics",
+        "finance"
+      ],
+      "category": "finance"
+    },
+    {
+      "name": "saas-pricing",
+      "source": "./saas-pricing",
+      "description": "Subscription data → pricing tier analysis.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brandon Gains",
+        "url": "https://cadborolabs.com"
+      },
+      "homepage": "https://cadborolabs.com",
+      "repository": "https://github.com/brandonsgitstub/saas-pricing-skill",
+      "license": "GPL-3.0-or-later",
+      "keywords": [
+        "saas",
+        "pricing",
+        "finance"
+      ],
+      "category": "finance"
+    }
+  ]
+}

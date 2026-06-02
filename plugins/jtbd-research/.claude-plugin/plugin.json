@@ -1,0 +1,11 @@
+{
+  "name": "jtbd-research",
+  "description": "Jobs-to-be-Done interview guides + synthesis.",
+  "version": "1.0.0",
+  "author": { "name": "Brandon Gains", "url": "https://cadborolabs.com" },
+  "homepage": "https://cadborolabs.com",
+  "repository": "https://github.com/brandonsgitstub/jtbd-skill",
+  "license": "GPL-3.0-or-later",
+  "keywords": ["product-management","research","jtbd"],
+  "category": "research"
+}

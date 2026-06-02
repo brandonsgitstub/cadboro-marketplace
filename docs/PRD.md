@@ -74,11 +74,12 @@ Install/usage flow for end users:
 - **R1.1** — Add `.claude-plugin/marketplace.json` at the repo root.
 - **R1.2** — Manifest declares marketplace `name: cadboro-labs`, owner
   (Brandon Gains / Cadboro Labs), and a `plugins` array.
-- **R1.3** — Set `metadata.pluginRoot` to `./plugins` so each entry's `source`
-  is just the plugin folder name.
-- **R1.4** — Each `plugins` entry includes `name`, `source` (folder name),
-  `description`, `version`, `author`, `homepage`, `repository`, `license`,
-  `keywords`, and `category` (`product-management`).
+- **R1.3** — Set `metadata.pluginRoot` to `./plugins`; each entry's `source` is
+  `./<plugin-folder>` (resolved relative to `pluginRoot`; the `./` prefix is
+  required by `claude plugin validate`).
+- **R1.4** — Each `plugins` entry includes `name`, `source`, `description`,
+  `version`, `author`, `homepage`, `repository`, `license`, `keywords`, and
+  `category`.
 
 ### 5.2 Skills catalog (G2)
 
@@ -92,18 +93,19 @@ Install/usage flow for end users:
 - **R2.4** — Plugins are **GPLv3-licensed** (per each `plugin.json`), matching
   the repository `LICENSE`.
 - **R2.5** — Every plugin MUST pass `claude plugin validate .` before merge.
-- **R2.6** — Catalog and target statuses:
+- **R2.6** — Catalog (all vendored from `github.com/brandonsgitstub`; plugin
+  folder and skill folder differ where the source skill's `name:` differs):
 
-  | Plugin | What it does | Status |
-  |--------|--------------|--------|
-  | `product-roadmap` | Backlog/prioritization → structured roadmap with sequencing rationale | ✅ Live |
-  | `prd-generator` | Rough ideas → engineering-ready PRDs | ⏳ To add |
-  | `user-story-generator` | Features → dev-ready user stories with acceptance criteria | ⏳ To add |
-  | `feature-prioritization` | Backlog → ranked RICE scorecard + brief | ⏳ To add |
-  | `jtbd-research` | Jobs-to-be-Done interview guides + synthesis | ⏳ To add |
-  | `anti-ai-design` | Distinctive, non-generic frontend interfaces | ⏳ To add |
-  | `saas-metrics` | SaaS metrics → scenario-modeled financial analysis | ⏳ To add |
-  | `saas-pricing` | Subscription data → pricing tier analysis | ⏳ To add |
+  | Plugin | Skill (`name:`) | Source repo | What it does | Status |
+  |--------|------------------|-------------|--------------|--------|
+  | `product-roadmap` | `roadmap-generator` | `product-roadmap-skill` | Backlog/prioritization → structured roadmap with sequencing rationale | ✅ Live |
+  | `prd-generator` | `prd-generator` | `prd-skill` | Rough ideas → engineering-ready PRDs | ✅ Live |
+  | `user-story-generator` | `user-story-generator` | `user-story-skill` | Features → dev-ready user stories with acceptance criteria | ✅ Live |
+  | `feature-prioritization` | `feature-prioritization` | `feature-prio-skill` | Backlog → ranked RICE scorecard + brief | ✅ Live |
+  | `jtbd-research` | `jtbd-interview-guide` | `jtbd-skill` | Jobs-to-be-Done interview guides + synthesis | ✅ Live |
+  | `anti-ai-design` | `frontend-design` | `anti-ai-design-skill` | Distinctive, non-generic frontend interfaces | ✅ Live |
+  | `saas-metrics` | `saas-metrics-analyzer` | `saas-metrics-skill` | SaaS metrics → scenario-modeled financial analysis | ✅ Live |
+  | `saas-pricing` | `saas-pricing-analyzer` | `saas-pricing-skill` | Subscription data → pricing tier analysis | ✅ Live |
 
 ### 5.3 README (G3)
 
@@ -168,11 +170,12 @@ cadboro-marketplace/
 
 ## 9. Milestones
 
-1. **M1** — Land manifest (`cadboro-labs`, `pluginRoot: ./plugins`) + vendor
-   `product-roadmap`; verify install and validate.
-2. **M2** — Publish the project README (catalog table + contribution procedure).
-3. **M3** — Vendor the remaining seven skills, one PR per skill, each validated.
-4. **M4** — Final pass: catalog/README in sync, full-repo validate green.
+1. **M1 ✅** — Manifest (`cadboro-labs`, `pluginRoot: ./plugins`) landed; all
+   eight skills vendored from their `brandonsgitstub` source repos.
+2. **M2 ✅** — Project README published (catalog table + contribution procedure).
+3. **M3 ✅** — `claude plugin validate .` passes; skill folders match each
+   `SKILL.md` `name:`; all JSON valid.
+4. **M4** — Review and merge the PR; tag a release.
 
 ## 10. Decisions (resolved)
 

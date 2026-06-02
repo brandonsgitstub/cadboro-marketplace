@@ -1,0 +1,11 @@
+{
+  "name": "prd-generator",
+  "description": "Rough ideas → engineering-ready PRDs.",
+  "version": "1.0.0",
+  "author": { "name": "Brandon Gains", "url": "https://cadborolabs.com" },
+  "homepage": "https://cadborolabs.com",
+  "repository": "https://github.com/brandonsgitstub/prd-skill",
+  "license": "GPL-3.0-or-later",
+  "keywords": ["product-management","prd","spec"],
+  "category": "product-management"
+}
